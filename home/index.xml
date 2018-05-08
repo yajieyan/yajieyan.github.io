@@ -2,95 +2,96 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Yajie Yan</title>
-    <link>/home/</link>
+    <link>yajieyan.github.io/home/</link>
     <description>Recent content in Homes on Yajie Yan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
     
-	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="yajieyan.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/home/about/</link>
+      <link>yajieyan.github.io/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
-      <guid>/home/about/</guid>
-      <description>Biography I&amp;rsquo;m a PhD student studying Computer Graphics in Washington Univeristy in St Louis. Under the supervision of Prof. Tao Ju, my research focuses on geometry. The topic of my PhD thesis is on robust computation of medial axis.</description>
+      <guid>yajieyan.github.io/home/about/</guid>
+      <description>Biography I&amp;rsquo;m a PhD student studying Computer Graphics in Washington Univeristy in St Louis. Under the supervision of Prof. Tao Ju, my research focuses on geometry. The topic of my PhD thesis is on robust computation of medial axis.
+This site is under heavy construction.</description>
     </item>
     
     <item>
       <title>Selected Publications</title>
-      <link>/home/publications_selected/</link>
+      <link>yajieyan.github.io/home/publications_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
-      <guid>/home/publications_selected/</guid>
+      <guid>yajieyan.github.io/home/publications_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Publications</title>
-      <link>/home/publications/</link>
+      <link>yajieyan.github.io/home/publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
-      <guid>/home/publications/</guid>
+      <guid>yajieyan.github.io/home/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>/home/talks/</link>
+      <link>yajieyan.github.io/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
-      <guid>/home/talks/</guid>
+      <guid>yajieyan.github.io/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>/home/posts/</link>
+      <link>yajieyan.github.io/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
-      <guid>/home/posts/</guid>
+      <guid>yajieyan.github.io/home/posts/</guid>
       <description> On July 9th, I will move to Redmond, WA to start an exciting full time position at Oculus Research (now known as Facebook Reality Labs).  </description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>/home/projects/</link>
+      <link>yajieyan.github.io/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
-      <guid>/home/projects/</guid>
+      <guid>yajieyan.github.io/home/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Custom Section</title>
-      <link>/home/teaching/</link>
+      <link>yajieyan.github.io/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
-      <guid>/home/teaching/</guid>
+      <guid>yajieyan.github.io/home/teaching/</guid>
       <description>This is an example of using the custom widget to create your own homepage section.
 To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>/home/tags/</link>
+      <link>yajieyan.github.io/home/tags/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 -0500</pubDate>
       
-      <guid>/home/tags/</guid>
+      <guid>yajieyan.github.io/home/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>/home/contact/</link>
+      <link>yajieyan.github.io/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
-      <guid>/home/contact/</guid>
+      <guid>yajieyan.github.io/home/contact/</guid>
       <description></description>
     </item>
     

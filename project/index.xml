@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Yajie Yan</title>
-    <link>/project/</link>
+    <link>yajieyan.github.io/project/</link>
     <description>Recent content in Projects on Yajie Yan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Mon, 07 May 2018 18:02:02 -0500</lastBuildDate>
     
-	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="yajieyan.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Robust medial axis computation and regularization</title>
-      <link>/project/ma/</link>
+      <link>yajieyan.github.io/project/ma/</link>
       <pubDate>Mon, 07 May 2018 18:02:02 -0500</pubDate>
       
-      <guid>/project/ma/</guid>
+      <guid>yajieyan.github.io/project/ma/</guid>
       <description>This project presents a robust medial axis generation pipeline. It consists of two works:
- Voxel Core: Efficient, robust, and provably good approximation of 3D medial axes Erosion thickness on medial axes of 3D shapes  </description>
+ Voxel Core: Efficient, robust, and provably good approximation of 3D medial axes Erosion thickness on medial axes of 3D shapes  (details coming soon&amp;hellip;)</description>
     </item>
     
   </channel>
