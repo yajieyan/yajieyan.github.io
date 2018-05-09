@@ -5,7 +5,16 @@
     
     <url>
     
-      <loc>yajieyan.github.io/project/ma/</loc>
+      <loc>/project/voxelcore-readme/</loc>
+      <lastmod>2018-05-08T19:10:35-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/ma/</loc>
       <lastmod>2018-05-07T18:02:02-05:00</lastmod>
     </url>
     
@@ -14,7 +23,7 @@
     
     <url>
     
-      <loc>yajieyan.github.io/post/</loc>
+      <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00-06:00</lastmod>
     </url>
     
@@ -23,7 +32,7 @@
     
     <url>
     
-      <loc>yajieyan.github.io/publication/</loc>
+      <loc>/publication/</loc>
       <lastmod>2017-01-01T00:00:00-06:00</lastmod>
     </url>
     
@@ -32,7 +41,7 @@
     
     <url>
     
-      <loc>yajieyan.github.io/talk/</loc>
+      <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00-06:00</lastmod>
     </url>
     
@@ -41,7 +50,7 @@
     
     <url>
     
-      <loc>yajieyan.github.io/categories/</loc>
+      <loc>/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -50,7 +59,17 @@
     
     <url>
     
-      <loc>yajieyan.github.io/tags/medial-axis/</loc>
+      <loc>/tags/hide/</loc>
+      <lastmod>2018-05-08T19:10:35-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/medial-axis/</loc>
       <lastmod>2018-05-07T18:02:02-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -60,8 +79,8 @@
     
     <url>
     
-      <loc>yajieyan.github.io/project/</loc>
-      <lastmod>2018-05-07T18:02:02-05:00</lastmod>
+      <loc>/project/</loc>
+      <lastmod>2018-05-08T19:10:35-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -70,7 +89,7 @@
     
     <url>
     
-      <loc>yajieyan.github.io/publication_types/</loc>
+      <loc>/publication_types/</loc>
       <priority>0</priority>
     </url>
     
@@ -79,8 +98,8 @@
     
     <url>
     
-      <loc>yajieyan.github.io/tags/</loc>
-      <lastmod>2018-05-07T18:02:02-05:00</lastmod>
+      <loc>/tags/</loc>
+      <lastmod>2018-05-08T19:10:35-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -89,7 +108,7 @@
     
     <url>
     
-      <loc>yajieyan.github.io/</loc>
+      <loc>/</loc>
       <lastmod>2016-04-20T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>

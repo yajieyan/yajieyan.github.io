@@ -2,24 +2,90 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yajie Yan on Yajie Yan</title>
-    <link>yajieyan.github.io/</link>
+    <link>/</link>
     <description>Recent content in Yajie Yan on Yajie Yan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
-    <atom:link href="yajieyan.github.io/" rel="self" type="application/rss+xml" />
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Voxelcore Readme</title>
+      <link>/project/voxelcore-readme/</link>
+      <pubDate>Tue, 08 May 2018 19:10:35 -0500</pubDate>
+      
+      <guid>/project/voxelcore-readme/</guid>
+      <description>
+
+&lt;h2 id=&#34;pipeline&#34;&gt;Pipeline&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/pipeline.png&#34; alt=&#34;fig-pipeline&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Figure 1. Pipeline.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;The program can be used to generate a voxelcore for either a given volume (representing a solid shape), or a triangular mesh (representing the surface of a shape) via voxelization. The pipeline is visualized in Figure 1.&lt;/p&gt;
+
+&lt;h2 id=&#34;preparing-input&#34;&gt;Preparing input&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Input of voxelcore program can be a binary volume (in format .mrc / .sog), or a triangular mesh representing the surface of a shape. The object voxels in the volume should have values &amp;gt; 0, while background voxels &amp;lt;= 0. The pipeline is shown in &lt;a href=&#34;#fig-pipeline&#34; target=&#34;_blank&#34;&gt;Figure 1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;MRC is a standard format for representing 3D CT images. SOG format is a sparse octree representation.&lt;/p&gt;
+
+&lt;h3 id=&#34;convert-to-mrc&#34;&gt;Convert to MRC&lt;/h3&gt;
+
+&lt;p&gt;If the user only has a stack of images (e.g. png, tiff), the images need to be preprocessed into a MRC file in the following ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Interactive programs&lt;/strong&gt; such as Paraview and Chimera can open stack of images in common formats, resulting in a volume dataset within the program. This voluem can be then saved as a mrc file.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Command line utilities&lt;/strong&gt; are available, but only accept certain image formats. For example the &lt;a href=&#34;http://bio3d.colorado.edu/imod/doc/program_listing.html#TOP&#34; target=&#34;_blank&#34;&gt;IMOD package&lt;/a&gt; offers a command line program called &lt;em&gt;tif2mrc&lt;/em&gt; that converts a stack of tiff images to a mrc file. The user would need to convert their images to tiff to use this utility.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Python scripts&lt;/strong&gt; can be written to convert datasets represented in even wider input formats to MRC. E.g. &lt;a href=&#34;https://pydicom.github.io/&#34; target=&#34;_blank&#34;&gt;pydicom&lt;/a&gt; can easily parse input in DICOM format, and &lt;a href=&#34;https://github.com/ccpem/mrcfile&#34; target=&#34;_blank&#34;&gt;mrcfile&lt;/a&gt; can write data out to a MRC file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;convert-to-sog&#34;&gt;Convert to SOG&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Voxelcore&lt;/strong&gt; program itself can produce a SOG file from a MRC file in mode &lt;code&gt;mrc2sog&lt;/code&gt;:
+&lt;code&gt;voxelcore -md=mrc2sog -mrc=mrc_file_path -sog=sog_output_path&lt;/code&gt;
+The original mrc can be deleted if the user has no other intention with it, since the sog file contains complete information about the volume.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Polymender&lt;/strong&gt; can be used to produce a SOG file from the given triangular mesh (route 2 in Figure 1) (see &lt;a href=&#34;http://www.cs.wustl.edu/~taoju/code/polymender.htm&#34; target=&#34;_blank&#34;&gt;Polymender&lt;/a&gt;, or &lt;a href=&#34;http://www.cs.wustl.edu/~taoju/code/PolyMender_1_7_1_exe.rar&#34; target=&#34;_blank&#34;&gt;download the program&lt;/a&gt; and see the readme.txt).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;producing-voxelcore-vc&#34;&gt;Producing voxelcore (VC)&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;route-1-from-volume-to-vc&#34;&gt;Route 1: from volume to VC&lt;/h3&gt;
+
+&lt;p&gt;In mode &lt;code&gt;-md=vol2ma&lt;/code&gt;, the program will read in the specified volume file &lt;a href=&#34;#fig-pipeline&#34; target=&#34;_blank&#34;&gt;figure&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;route-2-from-mesh-to-vc&#34;&gt;Route 2: from mesh to VC&lt;/h3&gt;
+</description>
+    </item>
     
     <item>
       <title>Robust medial axis computation and regularization</title>
-      <link>yajieyan.github.io/project/ma/</link>
+      <link>/project/ma/</link>
       <pubDate>Mon, 07 May 2018 18:02:02 -0500</pubDate>
       
-      <guid>yajieyan.github.io/project/ma/</guid>
+      <guid>/project/ma/</guid>
       <description>&lt;p&gt;This project presents a robust medial axis generation pipeline. It consists of two works:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Voxel Core: Efficient, robust, and provably good approximation of 3D medial axes&lt;/li&gt;
+&lt;li&gt;Voxel Core: Efficient, robust, and provably good approximation of 3D medial axes. &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;See readme&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Erosion thickness on medial axes of 3D shapes&lt;/li&gt;
 &lt;/ul&gt;
 

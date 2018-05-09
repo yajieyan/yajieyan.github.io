@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Yajie Yan</title>
-    <link>/project/</link>
-    <description>Recent content in Projects on Yajie Yan</description>
+    <title>Hide on Yajie Yan</title>
+    <link>/tags/hide/</link>
+    <description>Recent content in Hide on Yajie Yan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Tue, 08 May 2018 19:10:35 -0500</lastBuildDate>
     
-	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hide/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,16 +20,6 @@
       <guid>/project/voxelcore-readme/</guid>
       <description>Pipeline Figure 1. Pipeline. The program can be used to generate a voxelcore for either a given volume (representing a solid shape), or a triangular mesh (representing the surface of a shape) via voxelization. The pipeline is visualized in Figure 1.
 Preparing input Input of voxelcore program can be a binary volume (in format .mrc / .sog), or a triangular mesh representing the surface of a shape.</description>
-    </item>
-    
-    <item>
-      <title>Robust medial axis computation and regularization</title>
-      <link>/project/ma/</link>
-      <pubDate>Mon, 07 May 2018 18:02:02 -0500</pubDate>
-      
-      <guid>/project/ma/</guid>
-      <description>This project presents a robust medial axis generation pipeline. It consists of two works:
- Voxel Core: Efficient, robust, and provably good approximation of 3D medial axes. See readme Erosion thickness on medial axes of 3D shapes  (details coming soon&amp;hellip;)</description>
     </item>
     
   </channel>
