@@ -22,5 +22,15 @@
 Preparing input Input of voxelcore program can be a binary volume (in format .mrc / .sog), or a triangular mesh representing the surface of a shape.</description>
     </item>
     
+    <item>
+      <title>Robust medial axis computation and regularization</title>
+      <link>/project/ma/</link>
+      <pubDate>Mon, 07 May 2018 18:02:02 -0500</pubDate>
+      
+      <guid>/project/ma/</guid>
+      <description>This project presents a robust medial axis generation pipeline. It consists of two works:
+ Voxel Core: Efficient, robust, and provably good approximation of 3D medial axes. See readme Erosion thickness on medial axes of 3D shapes  (details coming soon&amp;hellip;)</description>
+    </item>
+    
   </channel>
 </rss>
