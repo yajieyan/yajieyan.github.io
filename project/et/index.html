@@ -53,7 +53,7 @@
   
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
   
   <link rel="stylesheet" href="/styles.css">
   
@@ -61,7 +61,7 @@
   
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', '76706912', 'auto');
+      ga('create', 'UA-76706912-1', 'auto');
       
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
@@ -159,7 +159,7 @@
         
 
         <li class="nav-item">
-          <a href="/#publications_selected">
+          <a href="/#publications">
             
             <span>Publications</span>
             
@@ -260,7 +260,31 @@
 
 <p>While playing a fundamental role in shape understanding, the medial axis is known to be sensitive to small boundary perturbations. Methods for pruning the medial axis are usually guided by some measure of significance. The majority of significance measures over the medial axes of 3D shapes are locally defined and hence unable to capture the scale of features. We introduce a global significance measure that generalizes in 3D the classical Erosion Thickness (ET) measure over the medial axes of 2D shapes. We give precise definition of ET in 3D, analyze its properties, and present an efficient approximation algorithm with bounded error on a piecewise linear medial axis. Experiments showed that ET outperforms local measures in differentiating small boundary noise from prominent shape features, and it is significantly faster to compute than existing global measures. We demonstrate the utility of ET in extracting clean, shape-revealing and topology-preserving skeletons of 3D shapes.</p>
 
-<p><a href="#"><code>pdf (author version)</code></a> <a href="#"><code>code</code></a>, <a href="#"><code>readme</code></a></p>
+<h2 id="gallery">Gallery</h2>
+
+<figure>
+
+<img src="/et_sig16/gallery.png" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Figure 1. Gallery of 12 shapes organized by columns. The surface, ET, curve-only skeleton and hybrid skeleton are shown for each shape by rows. See the supplementary material for complete results.</h4>
+  
+</figcaption>
+
+</figure>
+
+<h2 id="downloads">Downloads</h2>
+
+<ul>
+<li>Paper: <a href="#"><code>author version</code></a></li>
+<li>Supplementary:
+<a href="/et_sig16/et_sup.pdf"><code>proof</code></a>,
+<a href="/et_gallery/" target="_blank"><code>gallery(html)</code></a>,
+<a href="/et_sig16/et_sup2.pdf"><code>gallery(pdf)</code></a></li>
+<li>Tool: <a href="#"><code>exe</code></a>,<a href="#"><code>readme</code></a></li>
+</ul>
 
     </div>
 

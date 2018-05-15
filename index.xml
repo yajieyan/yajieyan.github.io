@@ -11,6 +11,107 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Supplementary material: a gallery of significance measures and skeletons</title>
+      <link>/et_gallery/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/et_gallery/</guid>
+      <description>&lt;p&gt;This document compares significance measures (object angle, circumradius, MGF, ET) on 15 shapes before and after boundary perturbation. The first column for each shape visualizes the significance measure by heat color (higher values in red) and transparency (higher values are more opaque). The second column shows the portion of the medial axis whose significance values are higher than a threshold. Two skeletons (a curve-only skeleton and a curve-and-surface skeleton) computed using our method for each shape are shown in the last row.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-2.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-3.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-4.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-5.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-6.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-7.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-8.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-9.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-10.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-11.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-12.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-13.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-14.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-15.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/sup/et_sup2-16.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Erosion Thickness: Simplifying Medial Axes in 3D</title>
       <link>/project/et/</link>
       <pubDate>Wed, 09 May 2018 23:22:19 -0500</pubDate>
@@ -22,7 +123,31 @@
 
 &lt;p&gt;While playing a fundamental role in shape understanding, the medial axis is known to be sensitive to small boundary perturbations. Methods for pruning the medial axis are usually guided by some measure of significance. The majority of significance measures over the medial axes of 3D shapes are locally defined and hence unable to capture the scale of features. We introduce a global significance measure that generalizes in 3D the classical Erosion Thickness (ET) measure over the medial axes of 2D shapes. We give precise definition of ET in 3D, analyze its properties, and present an efficient approximation algorithm with bounded error on a piecewise linear medial axis. Experiments showed that ET outperforms local measures in differentiating small boundary noise from prominent shape features, and it is significantly faster to compute than existing global measures. We demonstrate the utility of ET in extracting clean, shape-revealing and topology-preserving skeletons of 3D shapes.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;#&#34;&gt;&lt;code&gt;pdf (author version)&lt;/code&gt;&lt;/a&gt; &lt;a href=&#34;#&#34;&gt;&lt;code&gt;code&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;#&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;gallery&#34;&gt;Gallery&lt;/h2&gt;
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/et_sig16/gallery.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Figure 1. Gallery of 12 shapes organized by columns. The surface, ET, curve-only skeleton and hybrid skeleton are shown for each shape by rows. See the supplementary material for complete results.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Paper: &lt;a href=&#34;#&#34;&gt;&lt;code&gt;author version&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Supplementary:
+&lt;a href=&#34;/et_sig16/et_sup.pdf&#34;&gt;&lt;code&gt;proof&lt;/code&gt;&lt;/a&gt;,
+&lt;a href=&#34;/et_gallery/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;gallery(html)&lt;/code&gt;&lt;/a&gt;,
+&lt;a href=&#34;/et_sig16/et_sup2.pdf&#34;&gt;&lt;code&gt;gallery(pdf)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tool: &lt;a href=&#34;#&#34;&gt;&lt;code&gt;exe&lt;/code&gt;&lt;/a&gt;,&lt;a href=&#34;#&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -38,7 +163,36 @@
 
 &lt;p&gt;We present a novel algorithm for computing the medial axes of 3D shapes. We make the observation that the medial axis of a voxel shape can be simply yet faithfully approximated by the interior Voronoi diagram of the boundary vertices, which we call the voxel core. We further show that voxel cores can approximate the medial axes of any smooth shape with homotopy equivalence and geometric convergence. These insights motivate an algorithm that is simple, efficient, numerically stable, and equipped with theoretical guarantees. Compared with existing voxel-based methods, our method inherits their simplicity but is more scalable and can process significantly larger inputs. Compared with sampling-based methods that offer similar theoretical guarantees, our method produces visually comparable results but more robustly captures the topology of the input shape.&lt;/p&gt;
 
+&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
+
+&lt;p&gt;The input 3D shape to our algorithm can be a voxel representation (binarized volume), or a triangular mesh representing the surface of the shape. Then our algorithm generates the voxel core which approximates the medial axis of the shape. Both in theory and in practice, we are able to show voxel core captures the topology and is within provable proximity of the true medial axis of a voxel shape. Although for meshes such guarantees only hold theoretically, in practice we still observe a high success rate in delivering these promises. Below we show a flow chart that visualizes each step of our algorithm.&lt;/p&gt;
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/vc-flowchart.png&#34; alt=&#34;flowchart of algorithm&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Figure 1. Breakdown of algorithm. Given a triangular mesh, we first convert it into a voxel shape, then extract the voxel core which is colored by the lambda measure, and finally output a pruned voxel core. The voxelization step is omitted if the input is already a voxel shape.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;First, we voxelize the input triangular mesh (a) to obtain a voxel shape (b). Of course this step is omitted if the input is already a voxel shape.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We then extract the voxel core by computing the Voronoi diagram of the boundary voxel vertices interior to the voxel shape (c). In the figure the voxel core is colored by the lambda measure using a heat color scheme, with blue being low and red being high.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Finally we output the subset of the voxel core whose lambda value is below the user provided threshold (d) as the medial axis of the input shape.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
+
 &lt;p&gt;&lt;a href=&#34;#&#34;&gt;&lt;code&gt;pdf (author version)&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;#&#34;&gt;&lt;code&gt;code&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We provide the executable which implements the method. Please see the &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt; for details about using the tool.&lt;/p&gt;
 </description>
     </item>
     
