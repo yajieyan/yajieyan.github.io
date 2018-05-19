@@ -11,6 +11,53 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Voxel Core: Computing Medial Axes in 3D</title>
+      <link>/project/voxelcore/</link>
+      <pubDate>Sat, 19 May 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/voxelcore/</guid>
+      <description>
+
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;We present a novel algorithm for computing the medial axes of 3D shapes. We make the observation that the medial axis of a voxel shape can be simply yet faithfully approximated by the interior Voronoi diagram of the boundary vertices, which we call the voxel core. We further show that voxel cores can approximate the medial axes of any smooth shape with homotopy equivalence and geometric convergence. These insights motivate an algorithm that is simple, efficient, numerically stable, and equipped with theoretical guarantees. Compared with existing voxel-based methods, our method inherits their simplicity but is more scalable and can process significantly larger inputs. Compared with sampling-based methods that offer similar theoretical guarantees, our method produces visually comparable results but more robustly captures the topology of the input shape.&lt;/p&gt;
+
+&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
+
+&lt;p&gt;The input 3D shape to our algorithm can be a voxel representation (binarized volume), or a triangular mesh representing the surface of the shape. Then our algorithm generates the voxel core which approximates the medial axis of the shape. Both in theory and in practice, we are able to show voxel core captures the topology and is within provable proximity of the true medial axis of a voxel shape. Although for meshes such guarantees only hold theoretically, in practice we still observe a high success rate in delivering these promises. Below we show a flow chart that visualizes each step of our algorithm.&lt;/p&gt;
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/vc-flowchart.png&#34; alt=&#34;flowchart of algorithm&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Figure 1. Breakdown of algorithm. Given a triangular mesh, we first convert it into a voxel shape, then extract the voxel core which is colored by the lambda measure, and finally output a pruned voxel core. The voxelization step is omitted if the input is already a voxel shape.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;First, we voxelize the input triangular mesh (a) to obtain a voxel shape (b). Of course this step is omitted if the input is already a voxel shape.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We then extract the voxel core by computing the Voronoi diagram of the boundary voxel vertices interior to the voxel shape (c). In the figure the voxel core is colored by the lambda measure using a heat color scheme, with blue being low and red being high.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Finally we output the subset of the voxel core whose lambda value is below the user provided threshold (d) as the medial axis of the input shape.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;/vc_sig18/voxelma.pdf&#34;&gt;&lt;code&gt;pdf (author version)&lt;/code&gt;&lt;/a&gt;,
+&lt;a href=&#34;#&#34;&gt;&lt;code&gt;code&lt;/code&gt;&lt;/a&gt;,
+&lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We provide the executable which implements the method. Please see the &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt; for details about using the tool.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Supplementary material: a gallery of significance measures and skeletons</title>
       <link>/et_gallery/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 -0500</pubDate>
@@ -165,51 +212,6 @@
     </item>
     
     <item>
-      <title>Voxel Core: Computing Medial Axes in 3D</title>
-      <link>/project/voxelcore/</link>
-      <pubDate>Wed, 09 May 2018 23:22:09 -0500</pubDate>
-      
-      <guid>/project/voxelcore/</guid>
-      <description>
-
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;We present a novel algorithm for computing the medial axes of 3D shapes. We make the observation that the medial axis of a voxel shape can be simply yet faithfully approximated by the interior Voronoi diagram of the boundary vertices, which we call the voxel core. We further show that voxel cores can approximate the medial axes of any smooth shape with homotopy equivalence and geometric convergence. These insights motivate an algorithm that is simple, efficient, numerically stable, and equipped with theoretical guarantees. Compared with existing voxel-based methods, our method inherits their simplicity but is more scalable and can process significantly larger inputs. Compared with sampling-based methods that offer similar theoretical guarantees, our method produces visually comparable results but more robustly captures the topology of the input shape.&lt;/p&gt;
-
-&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
-
-&lt;p&gt;The input 3D shape to our algorithm can be a voxel representation (binarized volume), or a triangular mesh representing the surface of the shape. Then our algorithm generates the voxel core which approximates the medial axis of the shape. Both in theory and in practice, we are able to show voxel core captures the topology and is within provable proximity of the true medial axis of a voxel shape. Although for meshes such guarantees only hold theoretically, in practice we still observe a high success rate in delivering these promises. Below we show a flow chart that visualizes each step of our algorithm.&lt;/p&gt;
-
-&lt;figure&gt;
-
-&lt;img src=&#34;/img/vc-flowchart.png&#34; alt=&#34;flowchart of algorithm&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Figure 1. Breakdown of algorithm. Given a triangular mesh, we first convert it into a voxel shape, then extract the voxel core which is colored by the lambda measure, and finally output a pruned voxel core. The voxelization step is omitted if the input is already a voxel shape.&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;First, we voxelize the input triangular mesh (a) to obtain a voxel shape (b). Of course this step is omitted if the input is already a voxel shape.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;We then extract the voxel core by computing the Voronoi diagram of the boundary voxel vertices interior to the voxel shape (c). In the figure the voxel core is colored by the lambda measure using a heat color scheme, with blue being low and red being high.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Finally we output the subset of the voxel core whose lambda value is below the user provided threshold (d) as the medial axis of the input shape.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;#&#34;&gt;&lt;code&gt;pdf (author version)&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;#&#34;&gt;&lt;code&gt;code&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We provide the executable which implements the method. Please see the &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt; for details about using the tool.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Voxelcore Readme</title>
       <link>/project/voxelcore-readme/</link>
       <pubDate>Tue, 08 May 2018 19:10:35 -0500</pubDate>
@@ -223,7 +225,7 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/pipeline.png&#34; alt=&#34;fig-pipeline&#34; /&gt;
+&lt;img src=&#34;/img/vc-pipeline.png&#34; alt=&#34;fig-pipeline&#34; /&gt;
 
 
 
