@@ -17,8 +17,8 @@
       
     
   
-  <meta name="description" content="Pipeline Figure 1. Pipeline. The program can be used to generate a voxelcore for either a given volume (representing a solid shape), or a triangular mesh (representing the surface of a shape) via voxelization. The pipeline is visualized in Figure 1.
-Preparing input Input of voxelcore program can be a binary volume (in format .mrc / .sog), or a triangular mesh representing the surface of a shape.">
+  <meta name="description" content="Pipeline Figure 1. Pipeline. Usually the user is in pocession of a digital shape that&rsquo;s either represented as a volume by a set of images, or as a surface by a triangular mesh. Below we explain how to convert these datasets into a dense volume (.mrc) or a sparse signed octree (.sog) respectively, both are acceptable input formats to our program
+Preparing input As shown in Figure 1, input to our program shall be prepared differently depending on the type of original dataset.">
 
   
   <link rel="alternate" hreflang="en-us" href="/project/voxelcore-readme/">
@@ -91,8 +91,8 @@ Preparing input Input of voxelcore program can be a binary volume (in format .mr
   <meta property="og:site_name" content="Yajie Yan">
   <meta property="og:url" content="/project/voxelcore-readme/">
   <meta property="og:title" content="Voxelcore Readme | Yajie Yan">
-  <meta property="og:description" content="Pipeline Figure 1. Pipeline. The program can be used to generate a voxelcore for either a given volume (representing a solid shape), or a triangular mesh (representing the surface of a shape) via voxelization. The pipeline is visualized in Figure 1.
-Preparing input Input of voxelcore program can be a binary volume (in format .mrc / .sog), or a triangular mesh representing the surface of a shape.">
+  <meta property="og:description" content="Pipeline Figure 1. Pipeline. Usually the user is in pocession of a digital shape that&rsquo;s either represented as a volume by a set of images, or as a surface by a triangular mesh. Below we explain how to convert these datasets into a dense volume (.mrc) or a sparse signed octree (.sog) respectively, both are acceptable input formats to our program
+Preparing input As shown in Figure 1, input to our program shall be prepared differently depending on the type of original dataset.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-05-08T19:10:35-05:00">
@@ -275,44 +275,50 @@ Preparing input Input of voxelcore program can be a binary volume (in format .mr
 
 </figure>
 
-<p>The program can be used to generate a voxelcore for either a given volume (representing a solid shape), or a triangular mesh (representing the surface of a shape) via voxelization. The pipeline is visualized in Figure 1.</p>
+<p>Usually the user is in pocession of a digital shape that&rsquo;s either represented as a volume by a set of images, or as a surface by a triangular mesh. Below we explain how to convert these datasets into a dense volume (<code>.mrc</code>) or a sparse signed octree (<code>.sog</code>) respectively, both are acceptable input formats to our program</p>
 
 <h2 id="preparing-input">Preparing input</h2>
 
 <hr />
 
-<p>Input of voxelcore program can be a binary volume (in format .mrc / .sog), or a triangular mesh representing the surface of a shape. The object voxels in the volume should have values &gt; 0, while background voxels &lt;= 0. The pipeline is shown in <a href="#fig-pipeline" target="_blank">Figure 1</a>.</p>
+<p>As shown in Figure 1, input to our program shall be prepared differently depending on the type of original dataset.</p>
 
-<p>MRC is a standard format for representing 3D CT images. SOG format is a sparse octree representation.</p>
+<h3 id="from-image-stack-to-mrc">From image stack to <code>.mrc</code></h3>
 
-<h3 id="convert-to-mrc">Convert to MRC</h3>
-
-<p>If the user only has a stack of images (e.g. png, tiff), the images need to be preprocessed into a MRC file in the following ways:</p>
+<p>If the user has a stack of images (e.g. png, tiff), there exists three approaches to convert that into a volume in format <code>.mrc</code>, which can be input to our voxelcore program. A <code>.mrc</code> file stores a 3D volume where each voxel has a density value. Voxelcore assumes that object voxels have values &gt; 0, while background voxels &lt;= 0.</p>
 
 <ul>
-<li><strong>Interactive programs</strong> such as Paraview and Chimera can open stack of images in common formats, resulting in a volume dataset within the program. This voluem can be then saved as a mrc file.</li>
-<li><strong>Command line utilities</strong> are available, but only accept certain image formats. For example the <a href="http://bio3d.colorado.edu/imod/doc/program_listing.html#TOP" target="_blank">IMOD package</a> offers a command line program called <em>tif2mrc</em> that converts a stack of tiff images to a mrc file. The user would need to convert their images to tiff to use this utility.</li>
-<li><strong>Python scripts</strong> can be written to convert datasets represented in even wider input formats to MRC. E.g. <a href="https://pydicom.github.io/" target="_blank">pydicom</a> can easily parse input in DICOM format, and <a href="https://github.com/ccpem/mrcfile" target="_blank">mrcfile</a> can write data out to a MRC file.</li>
+<li><strong>Interactive programs</strong> Free-wares such as Paraview and Chimera can open stack of images in common formats (e.g. tiff, png, jpg), visualizing a volume dataset within the program. This voluem can be then saved as a <code>.mrc</code> file. This approach is very easy to perform, but may not be suited for purpose of batch processing.</li>
+<li><strong>Command line utilities</strong> One can easily find a handful command line tools online that process images into volume file. However to our knowledge, these utilities only accept certain image formats. For example the <a href="http://bio3d.colorado.edu/imod/doc/program_listing.html#TOP" target="_blank">IMOD package</a> offers a command line program called <code>tif2mrc</code> that converts a stack of tiff images to a mrc file. The user would need to convert their images to tiff first to use this utility. This approach is easy to batch process any number of datasets, but no one utility can cover a wide range of formats.</li>
+<li><strong>Scripts</strong> The 3rd option is to take a bit self initiative to write some scripts to do the job. Though myriad scripting languages are out there, we had the best experience with python, as the vastly available modules help pull the work off more easily. For example, <a href="https://pydicom.github.io/" target="_blank">pydicom</a> can easily parse DICOM files, a powerful yet sophisticated medical image format. Then the content can be written to a <code>.mrc</code> file using another python library, <a href="https://github.com/ccpem/mrcfile" target="_blank">mrcfile</a>. Similar library exists that parse other widly used image formats. These specialized python scripts can be further wrapped by a format dispatcher that can better automate the task. The advantage is apparently an automatic conversion tool suitable for batch processing a variety of formats the user wants to support.</li>
 </ul>
 
-<h3 id="convert-to-sog">Convert to SOG</h3>
+<h3 id="from-mesh-to-sog">From mesh to <code>.sog</code></h3>
+
+<p>On the other hand, users with a mesh representing the shape are suggested to convert it to a sparse signed octree in format <code>.sog</code>.</p>
 
 <ul>
+<li><strong>Polymender</strong> can be used to produce a SOG file from the given triangular mesh (route 2 in Figure 1) (see <a href="http://www.cs.wustl.edu/~taoju/code/polymender.htm" target="_blank">Polymender</a>, or <a href="http://www.cs.wustl.edu/~taoju/code/PolyMender_1_7_1_exe.rar" target="_blank">download the program</a> and see the readme.txt).</li>
 <li><strong>Voxelcore</strong> program itself can produce a SOG file from a MRC file in mode <code>mrc2sog</code>:
 <code>voxelcore -md=mrc2sog -mrc=mrc_file_path -sog=sog_output_path</code>
 The original mrc can be deleted if the user has no other intention with it, since the sog file contains complete information about the volume.</li>
-<li><strong>Polymender</strong> can be used to produce a SOG file from the given triangular mesh (route 2 in Figure 1) (see <a href="http://www.cs.wustl.edu/~taoju/code/polymender.htm" target="_blank">Polymender</a>, or <a href="http://www.cs.wustl.edu/~taoju/code/PolyMender_1_7_1_exe.rar" target="_blank">download the program</a> and see the readme.txt).</li>
 </ul>
 
-<h2 id="producing-voxelcore-vc">Producing voxelcore (VC)</h2>
+<h2 id="producing-medial-axis">Producing medial axis</h2>
 
 <hr />
 
-<h3 id="route-1-from-volume-to-vc">Route 1: from volume to VC</h3>
+<p>Now the input is ready, our program can be called in the following format</p>
 
-<p>In mode <code>-md=vol2ma</code>, the program will read in the specified volume file <a href="#fig-pipeline" target="_blank">figure</a></p>
+<p><code>voxelcore -md=validmode</code></p>
 
-<h3 id="route-2-from-mesh-to-vc">Route 2: from mesh to VC</h3>
+<p>The program runs in a few modes to help generate the medial axis of the input shape, and other relevant information.</p>
+
+<ul>
+<li><code>-md=vol2ma</code> In this mode, the program will read in the specified volume file, and output the voxel core to approximate true medial axis.</li>
+<li><code>-md=vol2mesh</code></li>
+<li><code>-md=mrc2sog</code></li>
+</ul>
 
     </div>
 
