@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0700</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Voxel Core: Computing Medial Axes in 3D</title>
       <link>/project/voxelcore/</link>
-      <pubDate>Sat, 19 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 19 May 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/voxelcore/</guid>
       <description>
@@ -47,11 +47,17 @@
 &lt;li&gt;&lt;p&gt;Finally we output the subset of the voxel core whose lambda value is below the user provided threshold (d) as the medial axis of the input shape.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;h2 id=&#34;generating-skeletons&#34;&gt;Generating skeletons&lt;/h2&gt;
+
+&lt;p&gt;The output of this project, i.e. Voxel cores can be futher simplified using &lt;a href=&#34;/project/et/&#34; target=&#34;_blank&#34;&gt;Erosion Thickness&lt;/a&gt;.&lt;/p&gt;
+
 &lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;/vc_sig18/voxelma.pdf&#34;&gt;&lt;code&gt;pdf (author version)&lt;/code&gt;&lt;/a&gt;,
-&lt;a href=&#34;#&#34;&gt;&lt;code&gt;code&lt;/code&gt;&lt;/a&gt;,
-&lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Paper: &lt;a href=&#34;/vc_sig18/voxelma.pdf&#34;&gt;&lt;code&gt;pdf (author version)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Supplementary: &lt;a href=&#34;/vc_sig18/voxelma_sup.pdf&#34;&gt;&lt;code&gt;pdf&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tool: &lt;a href=&#34;/vc_sig18/voxelcore.zip&#34;&gt;&lt;code&gt;exe&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;We provide the executable which implements the method. Please see the &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt; for details about using the tool.&lt;/p&gt;
 </description>
@@ -60,7 +66,7 @@
     <item>
       <title>Supplementary material: a gallery of significance measures and skeletons</title>
       <link>/et_gallery/</link>
-      <pubDate>Mon, 14 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 14 May 2018 00:00:00 -0700</pubDate>
       
       <guid>/et_gallery/</guid>
       <description>&lt;p&gt;This document compares significance measures (object angle, circumradius, MGF, ET) on 15 shapes before and after boundary perturbation. The first column for each shape visualizes the significance measure by heat color (higher values in red) and transparency (higher values are more opaque). The second column shows the portion of the medial axis whose significance values are higher than a threshold. Two skeletons (a curve-only skeleton and a curve-and-surface skeleton) computed using our method for each shape are shown in the last row.&lt;/p&gt;
@@ -204,9 +210,11 @@
 &lt;li&gt;Paper: &lt;a href=&#34;#&#34;&gt;&lt;code&gt;author version&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Supplementary:
 &lt;a href=&#34;/et_sig16/et_sup.pdf&#34;&gt;&lt;code&gt;proof&lt;/code&gt;&lt;/a&gt;,
-&lt;a href=&#34;/et_gallery/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;gallery(html)&lt;/code&gt;&lt;/a&gt;,
-&lt;a href=&#34;/et_sig16/et_sup2.pdf&#34;&gt;&lt;code&gt;gallery(pdf)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Tool: &lt;a href=&#34;#&#34;&gt;&lt;code&gt;exe&lt;/code&gt;&lt;/a&gt;,&lt;a href=&#34;#&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;/et_gallery/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;gallery(html)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Example meshes: &lt;a href=&#34;/et_sig16/data.zip&#34;&gt;&lt;code&gt;data&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tool:
+&lt;a href=&#34;/et_sig16/et.v2.zip&#34;&gt;&lt;code&gt;exe&lt;/code&gt;&lt;/a&gt;,
+&lt;a href=&#34;#&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
