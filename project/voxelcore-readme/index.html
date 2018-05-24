@@ -17,8 +17,7 @@
       
     
   
-  <meta name="description" content="Pipeline Figure 1. Pipeline. Usually the user is in pocession of a digital shape that&rsquo;s either represented as a volume by a set of images, or as a surface by a triangular mesh. Below we explain how to convert these datasets into a dense volume (.mrc) or a sparse signed octree (.sog) respectively, both are acceptable input formats to our program
-Preparing input As shown in Figure 1, input to our program shall be prepared differently depending on the type of original dataset.">
+  <meta name="description" content="Pipeline Figure 1. Pipeline of generating medial axis using voxelcore program. Users first prepare their datasets into dense volumes or sparse volumes, and then run voxelcore to produce medial axes. Optionally the medial axes can be further simplified using another tightly related tool called Erosion Thickness. Please see its project page for details. Usually the user is in pocession of a digital shape that&rsquo;s either represented as a volume by a set of images, or as a surface by a triangular mesh.">
 
   
   <link rel="alternate" hreflang="en-us" href="/project/voxelcore-readme/">
@@ -91,8 +90,7 @@ Preparing input As shown in Figure 1, input to our program shall be prepared dif
   <meta property="og:site_name" content="Yajie Yan">
   <meta property="og:url" content="/project/voxelcore-readme/">
   <meta property="og:title" content="Voxelcore Readme | Yajie Yan">
-  <meta property="og:description" content="Pipeline Figure 1. Pipeline. Usually the user is in pocession of a digital shape that&rsquo;s either represented as a volume by a set of images, or as a surface by a triangular mesh. Below we explain how to convert these datasets into a dense volume (.mrc) or a sparse signed octree (.sog) respectively, both are acceptable input formats to our program
-Preparing input As shown in Figure 1, input to our program shall be prepared differently depending on the type of original dataset.">
+  <meta property="og:description" content="Pipeline Figure 1. Pipeline of generating medial axis using voxelcore program. Users first prepare their datasets into dense volumes or sparse volumes, and then run voxelcore to produce medial axes. Optionally the medial axes can be further simplified using another tightly related tool called Erosion Thickness. Please see its project page for details. Usually the user is in pocession of a digital shape that&rsquo;s either represented as a volume by a set of images, or as a surface by a triangular mesh.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-05-08T19:10:35-05:00">
@@ -269,7 +267,7 @@ Preparing input As shown in Figure 1, input to our program shall be prepared dif
 
 
 <figcaption data-pre="Figure " data-post=":" >
-  <h4>Figure 1. Pipeline.</h4>
+  <h4>Figure 1. Pipeline of generating medial axis using voxelcore program. Users first prepare their datasets into dense volumes or sparse volumes, and then run voxelcore to produce medial axes. Optionally the medial axes can be further simplified using another tightly related tool called Erosion Thickness. Please see its project page for details.</h4>
   
 </figcaption>
 
@@ -314,11 +312,29 @@ The original mrc can be deleted if the user has no other intention with it, sinc
 
 <p>The program runs in a few modes to help generate the medial axis of the input shape, and other relevant information.</p>
 
-<ul>
-<li><code>-md=vol2ma</code> In this mode, the program will read in the specified volume file, and output the voxel core to approximate true medial axis.</li>
-<li><code>-md=vol2mesh</code></li>
-<li><code>-md=mrc2sog</code></li>
-</ul>
+<p><strong>Generating medial axis from volume with</strong> <code>-md=vol2ma</code>. In this mode, the program will read in the specified volume file, and output the voxel core to approximate true medial axis. Complete information about this mode is listed below (can be printed by typing <code>voxelcore -md=vol2ma</code>).</p>
+
+<pre><code>voxelcore -md=vol2ma &lt;in: volume fullpath. ext: .mrc/.sog&gt; &lt;out: MA fullpath. ext: .ply&gt; [optional args]
+optional:
+    -tt (1 or more comma-sep lambda pruning thresholds. OPTIONAL.) type: string default: &quot;0.04&quot;
+    -fullOrPruned (write full or prunned voxel core (0: pruned, 1: full, 2: both). OPTIONAL.) type: int32 default: 0
+</code></pre>
+
+<p><strong>Generating voxel shape boundary with</strong> <code>-md=vol2mesh</code>. In this mode, the boundary of the voxel shape represented by a volume file is extracted as a .off mesh file. Special argument can be specified to only output a point cloud (without faces). Full information about this mode is as follows (can be printed by typing <code>voxelcore -md=vol2mesh</code>).</p>
+
+<pre><code>voxelcore -md=vol2mesh &lt;input vol fullpath&gt; &lt;output mesh fullpath(w/o extension)&gt; [optional args]
+optional:
+    -onlyBndryVts (only extract the vertices of the voxel boundary. OPTIONAL.) type: bool default: true
+    -write2node (write voxel boundary vts to .node file in input file folder. OPTIONAL.) type: bool default: false
+</code></pre>
+
+<p><strong>Converting <code>.mrc</code> to <code>.sog</code> with</strong> <code>-md=mrc2sog</code>. A .mrc volume file can be converted to a .sog volume file in this mode (as depicted in the pipeline figure by a dotted arrow). Again typing <code>voxelcore -md=mrc2sog</code> prompts the full information abou this mode.</p>
+
+<pre><code>voxelcore -md=vol2mesh &lt;input vol fullpath&gt; &lt;output mesh fullpath(w/o extension)&gt; [optional]
+optional:
+    -onlyBndryVts (only extract the vertices of the voxel boundary. OPTIONAL.) type: bool default: true
+    -write2node (write voxel boundary vts to .node file in input file folder. OPTIONAL.) type: bool default: false
+</code></pre>
 
     </div>
 

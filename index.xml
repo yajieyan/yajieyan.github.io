@@ -49,7 +49,7 @@
 
 &lt;h2 id=&#34;generating-skeletons&#34;&gt;Generating skeletons&lt;/h2&gt;
 
-&lt;p&gt;The output of this project, i.e. Voxel cores can be futher simplified using &lt;a href=&#34;/project/et/&#34; target=&#34;_blank&#34;&gt;Erosion Thickness&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The output of this project, i.e. Voxel cores can be futher simplified using &lt;a href=&#34;/project/et/&#34; target=&#34;_blank&#34;&gt;Erosion Thickness&lt;/a&gt;. The output will be a skeleton featuring both curves and surfaces that capture tubular and planar regions of the shape.&lt;/p&gt;
 
 &lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
 
@@ -238,7 +238,7 @@
 
 
 &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Figure 1. Pipeline.&lt;/h4&gt;
+  &lt;h4&gt;Figure 1. Pipeline of generating medial axis using voxelcore program. Users first prepare their datasets into dense volumes or sparse volumes, and then run voxelcore to produce medial axes. Optionally the medial axes can be further simplified using another tightly related tool called Erosion Thickness. Please see its project page for details.&lt;/h4&gt;
   
 &lt;/figcaption&gt;
 
@@ -283,11 +283,29 @@ The original mrc can be deleted if the user has no other intention with it, sinc
 
 &lt;p&gt;The program runs in a few modes to help generate the medial axis of the input shape, and other relevant information.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;-md=vol2ma&lt;/code&gt; In this mode, the program will read in the specified volume file, and output the voxel core to approximate true medial axis.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-md=vol2mesh&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-md=mrc2sog&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Generating medial axis from volume with&lt;/strong&gt; &lt;code&gt;-md=vol2ma&lt;/code&gt;. In this mode, the program will read in the specified volume file, and output the voxel core to approximate true medial axis. Complete information about this mode is listed below (can be printed by typing &lt;code&gt;voxelcore -md=vol2ma&lt;/code&gt;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;voxelcore -md=vol2ma &amp;lt;in: volume fullpath. ext: .mrc/.sog&amp;gt; &amp;lt;out: MA fullpath. ext: .ply&amp;gt; [optional args]
+optional:
+    -tt (1 or more comma-sep lambda pruning thresholds. OPTIONAL.) type: string default: &amp;quot;0.04&amp;quot;
+    -fullOrPruned (write full or prunned voxel core (0: pruned, 1: full, 2: both). OPTIONAL.) type: int32 default: 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Generating voxel shape boundary with&lt;/strong&gt; &lt;code&gt;-md=vol2mesh&lt;/code&gt;. In this mode, the boundary of the voxel shape represented by a volume file is extracted as a .off mesh file. Special argument can be specified to only output a point cloud (without faces). Full information about this mode is as follows (can be printed by typing &lt;code&gt;voxelcore -md=vol2mesh&lt;/code&gt;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;voxelcore -md=vol2mesh &amp;lt;input vol fullpath&amp;gt; &amp;lt;output mesh fullpath(w/o extension)&amp;gt; [optional args]
+optional:
+    -onlyBndryVts (only extract the vertices of the voxel boundary. OPTIONAL.) type: bool default: true
+    -write2node (write voxel boundary vts to .node file in input file folder. OPTIONAL.) type: bool default: false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Converting &lt;code&gt;.mrc&lt;/code&gt; to &lt;code&gt;.sog&lt;/code&gt; with&lt;/strong&gt; &lt;code&gt;-md=mrc2sog&lt;/code&gt;. A .mrc volume file can be converted to a .sog volume file in this mode (as depicted in the pipeline figure by a dotted arrow). Again typing &lt;code&gt;voxelcore -md=mrc2sog&lt;/code&gt; prompts the full information abou this mode.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;voxelcore -md=vol2mesh &amp;lt;input vol fullpath&amp;gt; &amp;lt;output mesh fullpath(w/o extension)&amp;gt; [optional]
+optional:
+    -onlyBndryVts (only extract the vertices of the voxel boundary. OPTIONAL.) type: bool default: true
+    -write2node (write voxel boundary vts to .node file in input file folder. OPTIONAL.) type: bool default: false
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
