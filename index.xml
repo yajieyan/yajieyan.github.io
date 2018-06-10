@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Voxel Core: Computing Medial Axes in 3D</title>
       <link>/project/voxelcore/</link>
-      <pubDate>Sat, 19 May 2018 00:00:00 -0700</pubDate>
+      <pubDate>Sat, 19 May 2018 00:00:00 +0800</pubDate>
       
       <guid>/project/voxelcore/</guid>
       <description>
@@ -66,7 +66,7 @@
     <item>
       <title>Supplementary material: a gallery of significance measures and skeletons</title>
       <link>/et_gallery/</link>
-      <pubDate>Mon, 14 May 2018 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0800</pubDate>
       
       <guid>/et_gallery/</guid>
       <description>&lt;p&gt;This document compares significance measures (object angle, circumradius, MGF, ET) on 15 shapes before and after boundary perturbation. The first column for each shape visualizes the significance measure by heat color (higher values in red) and transparency (higher values are more opaque). The second column shows the portion of the medial axis whose significance values are higher than a threshold. Two skeletons (a curve-only skeleton and a curve-and-surface skeleton) computed using our method for each shape are shown in the last row.&lt;/p&gt;
