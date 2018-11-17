@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sat, 19 May 2018 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 May 2018 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="/tags/medial-axis/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Voxel Core: Computing Medial Axes in 3D</title>
       <link>/project/voxelcore/</link>
-      <pubDate>Sat, 19 May 2018 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 19 May 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/voxelcore/</guid>
       <description>Abstract We present a novel algorithm for computing the medial axes of 3D shapes. We make the observation that the medial axis of a voxel shape can be simply yet faithfully approximated by the interior Voronoi diagram of the boundary vertices, which we call the voxel core. We further show that voxel cores can approximate the medial axes of any smooth shape with homotopy equivalence and geometric convergence. These insights motivate an algorithm that is simple, efficient, numerically stable, and equipped with theoretical guarantees.</description>
