@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>medial-axis | Yajie Yan&#39;s Homepage</title>
+    <link>https://yajieyan.github.io/tag/medial-axis/</link>
+      <atom:link href="https://yajieyan.github.io/tag/medial-axis/index.xml" rel="self" type="application/rss+xml" />
+    <description>medial-axis</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://yajieyan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>medial-axis</title>
+      <link>https://yajieyan.github.io/tag/medial-axis/</link>
+    </image>
+    
+    <item>
+      <title>Voxel Cores: Efficient, robust, and provably good approximation of 3D medial axes</title>
+      <link>https://yajieyan.github.io/publication/voxelcore/overview/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://yajieyan.github.io/publication/voxelcore/overview/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-breakdown-of-algorithm-given-a-triangular-mesh-we-first-convert-it-into-a-voxel-shape-then-extract-the-voxel-core-which-is-colored-by-the-lambda-measure-and-finally-output-a-pruned-voxel-core-the-voxelization-step-is-omitted-if-the-input-is-already-a-voxel-shape&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://yajieyan.github.io/img/vc-flowchart.png&#34; alt=&#34;flowchart of algorithm&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Figure 1. Breakdown of algorithm. Given a triangular mesh, we first convert it into a voxel shape, then extract the voxel core which is colored by the lambda measure, and finally output a pruned voxel core. The voxelization step is omitted if the input is already a voxel shape.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;We present a novel algorithm for computing the medial axes of 3D shapes. We make the observation that the medial axis of a voxel shape can be simply yet faithfully approximated by the interior Voronoi diagram of the boundary vertices, which we call the voxel core. We further show that voxel cores can approximate the medial axes of any smooth shape with homotopy equivalence and geometric convergence. These insights motivate an algorithm that is simple, efficient, numerically stable, and equipped with theoretical guarantees. Compared with existing voxel-based methods, our method inherits their simplicity but is more scalable and can process significantly larger inputs. Compared with sampling-based methods that offer similar theoretical guarantees, our method produces visually comparable results but more robustly captures the topology of the input shape.&lt;/p&gt;
+&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
+&lt;p&gt;The input 3D shape to our algorithm can be a voxel representation (binarized volume), or a triangular mesh representing the surface of the shape. Then our algorithm generates the voxel core which approximates the medial axis of the shape. Both in theory and in practice, we are able to show voxel core captures the topology and is within provable proximity of the true medial axis of a voxel shape. Although for meshes such guarantees only hold theoretically, in practice we still observe a high success rate in delivering these promises. Below we show a flow chart that visualizes each step of our algorithm.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First, we voxelize the input triangular mesh (a) to obtain a voxel shape (b). Of course this step is omitted if the input is already a voxel shape.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We then extract the voxel core by computing the Voronoi diagram of the boundary voxel vertices interior to the voxel shape (c). In the figure the voxel core is colored by the lambda measure using a heat color scheme, with blue being low and red being high.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally we output the subset of the voxel core whose lambda value is below the user provided threshold (d) as the medial axis of the input shape.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;generating-skeletons&#34;&gt;Generating skeletons&lt;/h2&gt;
+&lt;p&gt;The output of this project, i.e. Voxel cores can be futher simplified using &lt;a href=&#34;https://yajieyan.github.io/publication/et/overview/&#34;&gt;Erosion Thickness&lt;/a&gt;. The output will be a skeleton featuring both curves and surfaces that capture tubular and planar regions of the shape.&lt;/p&gt;
+&lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Paper: &lt;a href=&#34;https://yajieyan.github.io/vc_sig18/voxelma.pdf&#34;&gt; &lt;code&gt;pdf (author version)&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Supplementary: &lt;a href=&#34;https://yajieyan.github.io/vc_sig18/voxelma_sup.pdf&#34;&gt; &lt;code&gt;pdf&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/ma_data/bunny_from_voxelcore.zip&#34;&gt; &lt;code&gt;Data&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tool: &lt;a href=&#34;https://yajieyan.github.io/vc_sig18/voxelcore.zip&#34;&gt; &lt;code&gt;exe&lt;/code&gt; &lt;/a&gt;, &lt;a href=&#34;https://yajieyan.github.io/publication/voxelcore/readme/&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We provide the executable which implements the method. Please see the &lt;a href=&#34;https://yajieyan.github.io/publication/voxelcore/readme/&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt; for details about using the tool.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Erosion Thickness on Medial Axes of 3D Shapes</title>
+      <link>https://yajieyan.github.io/publication/et/overview/</link>
+      <pubDate>Wed, 09 May 2018 00:00:00 +0000</pubDate>
+      <guid>https://yajieyan.github.io/publication/et/overview/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-the-medial-axis-of-a-bumpy-dolphin-shape-contains-numerous-noisy-branches-left-our-measure-properly-highlights-the-important-subset-of-the-medial-axis-middle-guided-by-the-measure-a-skeleton-is-generated-that-features-both-surfaces-and-curves-capturing-planar-and-tubular-parts-of-the-shape&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://yajieyan.github.io/et_sig16/et_teaser.png&#34; alt=&#34;Figure 1. The medial axis of a bumpy dolphin shape contains numerous noisy branches (left). Our measure properly highlights the important subset of the medial axis (middle). Guided by the measure, a skeleton is generated that features both surfaces and curves capturing planar and tubular parts of the shape.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Figure 1. The medial axis of a bumpy dolphin shape contains numerous noisy branches (left). Our measure properly highlights the important subset of the medial axis (middle). Guided by the measure, a skeleton is generated that features both surfaces and curves capturing planar and tubular parts of the shape.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;While playing a fundamental role in shape understanding, the medial axis is known to be sensitive to small boundary perturbations. Methods for pruning the medial axis are usually guided by some measure of significance. The majority of significance measures over the medial axes of 3D shapes are locally defined and hence unable to capture the scale of features. We introduce a global significance measure that generalizes in 3D the classical Erosion Thickness (ET) measure over the medial axes of 2D shapes. We give precise definition of ET in 3D, analyze its properties, and present an efficient approximation algorithm with bounded error on a piecewise linear medial axis. Experiments showed that ET outperforms local measures in differentiating small boundary noise from prominent shape features, and it is significantly faster to compute than existing global measures. We demonstrate the utility of ET in extracting clean, shape-revealing and topology-preserving skeletons of 3D shapes.&lt;/p&gt;
+&lt;h3 id=&#34;gallery&#34;&gt;Gallery&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-gallery-of-12-shapes-organized-by-columns-the-surface-et-curve-only-skeleton-and-hybrid-skeleton-are-shown-for-each-shape-by-rows-see-the-supplementary-material-for-complete-results&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://yajieyan.github.io/et_sig16/gallery.png&#34; alt=&#34;Figure 2. Gallery of 12 shapes organized by columns. The surface, ET, curve-only skeleton and hybrid skeleton are shown for each shape by rows. See the supplementary material for complete results.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Figure 2. Gallery of 12 shapes organized by columns. The surface, ET, curve-only skeleton and hybrid skeleton are shown for each shape by rows. See the supplementary material for complete results.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;downloads&#34;&gt;Downloads&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Paper: &lt;a href=&#34;#&#34;&gt;&lt;code&gt;author version&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Supplementary:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/et_sig16/et_sup.pdf&#34;&gt; &lt;code&gt;proof&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/publication/et/et_gallery/&#34;&gt;&lt;code&gt;gallery(html)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Example meshes:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/ma_data/bunny_from_voxelcore.zip&#34;&gt; &lt;code&gt;MA from voxelcore&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/ma_data/hand_from_scaleaxis.zip&#34;&gt; &lt;code&gt;MA from scaleaxis&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tool:
+&lt;a href=&#34;https://yajieyan.github.io/et_sig16/et.v2.zip&#34;&gt; &lt;code&gt;exe&lt;/code&gt; &lt;/a&gt;,
+&lt;a href=&#34;https://yajieyan.github.io/publication/et/readme/&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

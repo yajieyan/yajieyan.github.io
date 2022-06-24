@@ -1,329 +1,376 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yajie Yan on Yajie Yan</title>
-    <link>/</link>
-    <description>Recent content in Yajie Yan on Yajie Yan</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0700</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <title>Yajie Yan&#39;s Homepage</title>
+    <link>https://yajieyan.github.io/</link>
+      <atom:link href="https://yajieyan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yajie Yan&#39;s Homepage</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://yajieyan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Yajie Yan&#39;s Homepage</title>
+      <link>https://yajieyan.github.io/</link>
+    </image>
     
     <item>
-      <title>Voxel Core: Computing Medial Axes in 3D</title>
-      <link>/project/voxelcore/</link>
-      <pubDate>Sat, 19 May 2018 00:00:00 -0700</pubDate>
-      
-      <guid>/project/voxelcore/</guid>
-      <description>
-
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;We present a novel algorithm for computing the medial axes of 3D shapes. We make the observation that the medial axis of a voxel shape can be simply yet faithfully approximated by the interior Voronoi diagram of the boundary vertices, which we call the voxel core. We further show that voxel cores can approximate the medial axes of any smooth shape with homotopy equivalence and geometric convergence. These insights motivate an algorithm that is simple, efficient, numerically stable, and equipped with theoretical guarantees. Compared with existing voxel-based methods, our method inherits their simplicity but is more scalable and can process significantly larger inputs. Compared with sampling-based methods that offer similar theoretical guarantees, our method produces visually comparable results but more robustly captures the topology of the input shape.&lt;/p&gt;
-
-&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
-
-&lt;p&gt;The input 3D shape to our algorithm can be a voxel representation (binarized volume), or a triangular mesh representing the surface of the shape. Then our algorithm generates the voxel core which approximates the medial axis of the shape. Both in theory and in practice, we are able to show voxel core captures the topology and is within provable proximity of the true medial axis of a voxel shape. Although for meshes such guarantees only hold theoretically, in practice we still observe a high success rate in delivering these promises. Below we show a flow chart that visualizes each step of our algorithm.&lt;/p&gt;
-
-&lt;figure&gt;
-
-&lt;img src=&#34;/img/vc-flowchart.png&#34; alt=&#34;flowchart of algorithm&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Figure 1. Breakdown of algorithm. Given a triangular mesh, we first convert it into a voxel shape, then extract the voxel core which is colored by the lambda measure, and finally output a pruned voxel core. The voxelization step is omitted if the input is already a voxel shape.&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
+      <title>Example Talk</title>
+      <link>https://yajieyan.github.io/talk/example-talk/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <guid>https://yajieyan.github.io/talk/example-talk/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Wowchemy, the website builder for Hugo</title>
+      <link>https://yajieyan.github.io/post/getting-started/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://yajieyan.github.io/post/getting-started/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;First, we voxelize the input triangular mesh (a) to obtain a voxel shape (b). Of course this step is omitted if the input is already a voxel shape.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;We then extract the voxel core by computing the Voronoi diagram of the boundary voxel vertices interior to the voxel shape (c). In the figure the voxel core is colored by the lambda measure using a heat color scheme, with blue being low and red being high.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Finally we output the subset of the voxel core whose lambda value is below the user provided threshold (d) as the medial axis of the input shape.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;
+&lt;li&gt;The template can be modified and customised to suit your needs. It&amp;rsquo;s a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a &lt;strong&gt;no-code solution (write in Markdown and customize with YAML parameters)&lt;/strong&gt; and having &lt;strong&gt;flexibility to later add even deeper personalization with HTML and CSS&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;generating-skeletons&#34;&gt;Generating skeletons&lt;/h2&gt;
 
-&lt;p&gt;The output of this project, i.e. Voxel cores can be futher simplified using &lt;a href=&#34;/project/et/&#34; target=&#34;_blank&#34;&gt;Erosion Thickness&lt;/a&gt;. The output will be a skeleton featuring both curves and surfaces that capture tubular and planar regions of the shape.&lt;/p&gt;
 
-&lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
 
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-template-is-mobile-first-with-a-responsive-design-to-ensure-that-your-site-looks-stunning-on-every-device&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/master/academic.png&#34; alt=&#34;The template is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The template is mobile first with a responsive design to ensure that your site looks stunning on every device.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;get-started&#34;&gt;Get Started&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Paper: &lt;a href=&#34;/vc_sig18/voxelma.pdf&#34;&gt;&lt;code&gt;pdf (author version)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Supplementary: &lt;a href=&#34;/vc_sig18/voxelma_sup.pdf&#34;&gt;&lt;code&gt;pdf&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Tool: &lt;a href=&#34;/vc_sig18/voxelcore.zip&#34;&gt;&lt;code&gt;exe&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👉 &lt;a href=&#34;https://wowchemy.com/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Create a new site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📚 &lt;a href=&#34;https://wowchemy.com/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Personalize your site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;Wowchemy community&lt;/strong&gt;&lt;/a&gt; or &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Hugo community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/wowchemy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@wowchemy&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%23MadeWithWowchemy&amp;amp;src=typed_query&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithWowchemy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💡 &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt; for &lt;em&gt;Wowchemy&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⬆️ &lt;strong&gt;Updating Wowchemy?&lt;/strong&gt; View the &lt;a href=&#34;https://wowchemy.com/docs/hugo-tutorials/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Tutorial&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/h2&gt;
+&lt;p&gt;To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p&gt;
+&lt;h3 id=&#34;-click-here-to-become-a-sponsor-and-help-support-wowchemys-future-httpswowchemycomplans&#34;&gt;&lt;a href=&#34;https://wowchemy.com/plans/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;❤️ Click here to become a sponsor and help support Wowchemy&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock &lt;a href=&#34;https://wowchemy.com/plans/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these&lt;/a&gt; awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/wowchemy/hugo-academic-cli&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic CLI&lt;/a&gt;:&lt;/strong&gt; Automatically import publications from BibTeX&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://wowchemy.com/user-stories/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://wowchemy.com/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/docs/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://wowchemy.com/docs/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://wowchemy.com/docs/import/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://wowchemy.com/docs/install-locally/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://wowchemy.com/docs/customization/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 34+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;p&gt;Wowchemy and its templates come with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can choose their preferred mode - click the moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/customization&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully customizable.&lt;/p&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://yajieyan.github.io/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://yajieyan.github.io/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://revealjs.com/pdf-export/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Eating...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% fragment %}} One {{% /fragment %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% fragment %}} **Two** {{% /fragment %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% fragment %}} Three {{% /fragment %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Three
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% speaker_note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Only the speaker can read these notes
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Press &lt;span class=&#34;sb&#34;&gt;`S`&lt;/span&gt; key to view
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  {{% /speaker_note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;We provide the executable which implements the method. Please see the &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt; for details about using the tool.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/media/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/media/boards.jpg&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;my-style&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;navy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Supplementary material: a gallery of significance measures and skeletons</title>
-      <link>/et_gallery/</link>
-      <pubDate>Mon, 14 May 2018 00:00:00 -0700</pubDate>
-      
-      <guid>/et_gallery/</guid>
-      <description>&lt;p&gt;This document compares significance measures (object angle, circumradius, MGF, ET) on 15 shapes before and after boundary perturbation. The first column for each shape visualizes the significance measure by heat color (higher values in red) and transparency (higher values are more opaque). The second column shows the portion of the medial axis whose significance values are higher than a threshold. Two skeletons (a curve-only skeleton and a curve-and-surface skeleton) computed using our method for each shape are shown in the last row.&lt;/p&gt;
-
-&lt;p&gt;&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-2.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-3.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-4.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-5.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-6.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-7.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-8.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-9.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-10.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-11.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-12.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-13.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-14.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-15.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/sup/et_sup2-16.jpg&#34; /&gt;
-
-
-&lt;/figure&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Erosion Thickness: Simplifying Medial Axes in 3D</title>
-      <link>/project/et/</link>
-      <pubDate>Wed, 09 May 2018 23:22:19 -0500</pubDate>
-      
-      <guid>/project/et/</guid>
+      <title>Voxel Cores: Efficient, robust, and provably good approximation of 3D medial axes</title>
+      <link>https://yajieyan.github.io/publication/voxelcore/overview/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://yajieyan.github.io/publication/voxelcore/overview/</guid>
       <description>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-breakdown-of-algorithm-given-a-triangular-mesh-we-first-convert-it-into-a-voxel-shape-then-extract-the-voxel-core-which-is-colored-by-the-lambda-measure-and-finally-output-a-pruned-voxel-core-the-voxelization-step-is-omitted-if-the-input-is-already-a-voxel-shape&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://yajieyan.github.io/img/vc-flowchart.png&#34; alt=&#34;flowchart of algorithm&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Figure 1. Breakdown of algorithm. Given a triangular mesh, we first convert it into a voxel shape, then extract the voxel core which is colored by the lambda measure, and finally output a pruned voxel core. The voxelization step is omitted if the input is already a voxel shape.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;While playing a fundamental role in shape understanding, the medial axis is known to be sensitive to small boundary perturbations. Methods for pruning the medial axis are usually guided by some measure of significance. The majority of significance measures over the medial axes of 3D shapes are locally defined and hence unable to capture the scale of features. We introduce a global significance measure that generalizes in 3D the classical Erosion Thickness (ET) measure over the medial axes of 2D shapes. We give precise definition of ET in 3D, analyze its properties, and present an efficient approximation algorithm with bounded error on a piecewise linear medial axis. Experiments showed that ET outperforms local measures in differentiating small boundary noise from prominent shape features, and it is significantly faster to compute than existing global measures. We demonstrate the utility of ET in extracting clean, shape-revealing and topology-preserving skeletons of 3D shapes.&lt;/p&gt;
-
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/et_teaser.png&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Figure 1. The medial axis of a bumpy dolphin shape contains numerous noisy branches (left). Our measure properly highlights the important subset of the medial axis (middle). Guided by the measure, a skeleton is generated that features both surfaces and curves capturing planar and tubular parts of the shape.&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
-&lt;h2 id=&#34;gallery&#34;&gt;Gallery&lt;/h2&gt;
-
-&lt;figure&gt;
-
-&lt;img src=&#34;/et_sig16/gallery.png&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Figure 2. Gallery of 12 shapes organized by columns. The surface, ET, curve-only skeleton and hybrid skeleton are shown for each shape by rows. See the supplementary material for complete results.&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
+&lt;p&gt;We present a novel algorithm for computing the medial axes of 3D shapes. We make the observation that the medial axis of a voxel shape can be simply yet faithfully approximated by the interior Voronoi diagram of the boundary vertices, which we call the voxel core. We further show that voxel cores can approximate the medial axes of any smooth shape with homotopy equivalence and geometric convergence. These insights motivate an algorithm that is simple, efficient, numerically stable, and equipped with theoretical guarantees. Compared with existing voxel-based methods, our method inherits their simplicity but is more scalable and can process significantly larger inputs. Compared with sampling-based methods that offer similar theoretical guarantees, our method produces visually comparable results but more robustly captures the topology of the input shape.&lt;/p&gt;
+&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
+&lt;p&gt;The input 3D shape to our algorithm can be a voxel representation (binarized volume), or a triangular mesh representing the surface of the shape. Then our algorithm generates the voxel core which approximates the medial axis of the shape. Both in theory and in practice, we are able to show voxel core captures the topology and is within provable proximity of the true medial axis of a voxel shape. Although for meshes such guarantees only hold theoretically, in practice we still observe a high success rate in delivering these promises. Below we show a flow chart that visualizes each step of our algorithm.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First, we voxelize the input triangular mesh (a) to obtain a voxel shape (b). Of course this step is omitted if the input is already a voxel shape.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We then extract the voxel core by computing the Voronoi diagram of the boundary voxel vertices interior to the voxel shape (c). In the figure the voxel core is colored by the lambda measure using a heat color scheme, with blue being low and red being high.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally we output the subset of the voxel core whose lambda value is below the user provided threshold (d) as the medial axis of the input shape.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;generating-skeletons&#34;&gt;Generating skeletons&lt;/h2&gt;
+&lt;p&gt;The output of this project, i.e. Voxel cores can be futher simplified using &lt;a href=&#34;https://yajieyan.github.io/publication/et/overview/&#34;&gt;Erosion Thickness&lt;/a&gt;. The output will be a skeleton featuring both curves and surfaces that capture tubular and planar regions of the shape.&lt;/p&gt;
 &lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Paper: &lt;a href=&#34;https://yajieyan.github.io/vc_sig18/voxelma.pdf&#34;&gt; &lt;code&gt;pdf (author version)&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Supplementary: &lt;a href=&#34;https://yajieyan.github.io/vc_sig18/voxelma_sup.pdf&#34;&gt; &lt;code&gt;pdf&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/ma_data/bunny_from_voxelcore.zip&#34;&gt; &lt;code&gt;Data&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tool: &lt;a href=&#34;https://yajieyan.github.io/vc_sig18/voxelcore.zip&#34;&gt; &lt;code&gt;exe&lt;/code&gt; &lt;/a&gt;, &lt;a href=&#34;https://yajieyan.github.io/publication/voxelcore/readme/&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We provide the executable which implements the method. Please see the &lt;a href=&#34;https://yajieyan.github.io/publication/voxelcore/readme/&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt; for details about using the tool.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Erosion Thickness on Medial Axes of 3D Shapes</title>
+      <link>https://yajieyan.github.io/publication/et/overview/</link>
+      <pubDate>Wed, 09 May 2018 00:00:00 +0000</pubDate>
+      <guid>https://yajieyan.github.io/publication/et/overview/</guid>
+      <description>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-the-medial-axis-of-a-bumpy-dolphin-shape-contains-numerous-noisy-branches-left-our-measure-properly-highlights-the-important-subset-of-the-medial-axis-middle-guided-by-the-measure-a-skeleton-is-generated-that-features-both-surfaces-and-curves-capturing-planar-and-tubular-parts-of-the-shape&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://yajieyan.github.io/et_sig16/et_teaser.png&#34; alt=&#34;Figure 1. The medial axis of a bumpy dolphin shape contains numerous noisy branches (left). Our measure properly highlights the important subset of the medial axis (middle). Guided by the measure, a skeleton is generated that features both surfaces and curves capturing planar and tubular parts of the shape.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Figure 1. The medial axis of a bumpy dolphin shape contains numerous noisy branches (left). Our measure properly highlights the important subset of the medial axis (middle). Guided by the measure, a skeleton is generated that features both surfaces and curves capturing planar and tubular parts of the shape.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;While playing a fundamental role in shape understanding, the medial axis is known to be sensitive to small boundary perturbations. Methods for pruning the medial axis are usually guided by some measure of significance. The majority of significance measures over the medial axes of 3D shapes are locally defined and hence unable to capture the scale of features. We introduce a global significance measure that generalizes in 3D the classical Erosion Thickness (ET) measure over the medial axes of 2D shapes. We give precise definition of ET in 3D, analyze its properties, and present an efficient approximation algorithm with bounded error on a piecewise linear medial axis. Experiments showed that ET outperforms local measures in differentiating small boundary noise from prominent shape features, and it is significantly faster to compute than existing global measures. We demonstrate the utility of ET in extracting clean, shape-revealing and topology-preserving skeletons of 3D shapes.&lt;/p&gt;
+&lt;h3 id=&#34;gallery&#34;&gt;Gallery&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-gallery-of-12-shapes-organized-by-columns-the-surface-et-curve-only-skeleton-and-hybrid-skeleton-are-shown-for-each-shape-by-rows-see-the-supplementary-material-for-complete-results&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://yajieyan.github.io/et_sig16/gallery.png&#34; alt=&#34;Figure 2. Gallery of 12 shapes organized by columns. The surface, ET, curve-only skeleton and hybrid skeleton are shown for each shape by rows. See the supplementary material for complete results.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Figure 2. Gallery of 12 shapes organized by columns. The surface, ET, curve-only skeleton and hybrid skeleton are shown for each shape by rows. See the supplementary material for complete results.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;downloads&#34;&gt;Downloads&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Paper: &lt;a href=&#34;#&#34;&gt;&lt;code&gt;author version&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Supplementary:
-&lt;a href=&#34;/et_sig16/et_sup.pdf&#34;&gt;&lt;code&gt;proof&lt;/code&gt;&lt;/a&gt;,
-&lt;a href=&#34;/et_gallery/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;gallery(html)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Example meshes: &lt;a href=&#34;/et_sig16/data.zip&#34;&gt;&lt;code&gt;data&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/et_sig16/et_sup.pdf&#34;&gt; &lt;code&gt;proof&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/publication/et/et_gallery/&#34;&gt;&lt;code&gt;gallery(html)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Example meshes:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/ma_data/bunny_from_voxelcore.zip&#34;&gt; &lt;code&gt;MA from voxelcore&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/ma_data/hand_from_scaleaxis.zip&#34;&gt; &lt;code&gt;MA from scaleaxis&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Tool:
-&lt;a href=&#34;/et_sig16/et.v2.zip&#34;&gt;&lt;code&gt;exe&lt;/code&gt;&lt;/a&gt;,
-&lt;a href=&#34;#&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://yajieyan.github.io/et_sig16/et.v2.zip&#34;&gt; &lt;code&gt;exe&lt;/code&gt; &lt;/a&gt;,
+&lt;a href=&#34;https://yajieyan.github.io/publication/et/readme/&#34;&gt;&lt;code&gt;readme&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
-      <title>Voxelcore Readme</title>
-      <link>/project/voxelcore-readme/</link>
-      <pubDate>Tue, 08 May 2018 19:10:35 -0500</pubDate>
-      
-      <guid>/project/voxelcore-readme/</guid>
-      <description>
-
-&lt;h2 id=&#34;pipeline&#34;&gt;Pipeline&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;figure&gt;
-
-&lt;img src=&#34;/img/vc-pipeline.png&#34; alt=&#34;fig-pipeline&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Figure 1. Pipeline of generating medial axis using voxelcore program. Users first prepare their datasets into dense volumes or sparse volumes, and then run voxelcore to produce medial axes. Optionally the medial axes can be further simplified using another tightly related tool called Erosion Thickness. Please see its project page for details.&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
-&lt;p&gt;Usually the user is in pocession of a digital shape that&amp;rsquo;s either represented as a volume by a set of images, or as a surface by a triangular mesh. Below we explain how to convert these datasets into a dense volume (&lt;code&gt;.mrc&lt;/code&gt;) or a sparse signed octree (&lt;code&gt;.sog&lt;/code&gt;) respectively, both are acceptable input formats to our program&lt;/p&gt;
-
-&lt;h2 id=&#34;preparing-input&#34;&gt;Preparing input&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;As shown in Figure 1, input to our program shall be prepared differently depending on the type of original dataset.&lt;/p&gt;
-
-&lt;h3 id=&#34;from-image-stack-to-mrc&#34;&gt;From image stack to &lt;code&gt;.mrc&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;If the user has a stack of images (e.g. png, tiff), there exists three approaches to convert that into a volume in format &lt;code&gt;.mrc&lt;/code&gt;, which can be input to our voxelcore program. A &lt;code&gt;.mrc&lt;/code&gt; file stores a 3D volume where each voxel has a density value. Voxelcore assumes that object voxels have values &amp;gt; 0, while background voxels &amp;lt;= 0.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Interactive programs&lt;/strong&gt; Free-wares such as Paraview and Chimera can open stack of images in common formats (e.g. tiff, png, jpg), visualizing a volume dataset within the program. This voluem can be then saved as a &lt;code&gt;.mrc&lt;/code&gt; file. This approach is very easy to perform, but may not be suited for purpose of batch processing.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Command line utilities&lt;/strong&gt; One can easily find a handful command line tools online that process images into volume file. However to our knowledge, these utilities only accept certain image formats. For example the &lt;a href=&#34;http://bio3d.colorado.edu/imod/doc/program_listing.html#TOP&#34; target=&#34;_blank&#34;&gt;IMOD package&lt;/a&gt; offers a command line program called &lt;code&gt;tif2mrc&lt;/code&gt; that converts a stack of tiff images to a mrc file. The user would need to convert their images to tiff first to use this utility. This approach is easy to batch process any number of datasets, but no one utility can cover a wide range of formats.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Scripts&lt;/strong&gt; The 3rd option is to take a bit self initiative to write some scripts to do the job. Though myriad scripting languages are out there, we had the best experience with python, as the vastly available modules help pull the work off more easily. For example, &lt;a href=&#34;https://pydicom.github.io/&#34; target=&#34;_blank&#34;&gt;pydicom&lt;/a&gt; can easily parse DICOM files, a powerful yet sophisticated medical image format. Then the content can be written to a &lt;code&gt;.mrc&lt;/code&gt; file using another python library, &lt;a href=&#34;https://github.com/ccpem/mrcfile&#34; target=&#34;_blank&#34;&gt;mrcfile&lt;/a&gt;. Similar library exists that parse other widly used image formats. These specialized python scripts can be further wrapped by a format dispatcher that can better automate the task. The advantage is apparently an automatic conversion tool suitable for batch processing a variety of formats the user wants to support.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;from-mesh-to-sog&#34;&gt;From mesh to &lt;code&gt;.sog&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;On the other hand, users with a mesh representing the shape are suggested to convert it to a sparse signed octree in format &lt;code&gt;.sog&lt;/code&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Polymender&lt;/strong&gt; can be used to produce a SOG file from the given triangular mesh (route 2 in Figure 1) (see &lt;a href=&#34;http://www.cs.wustl.edu/~taoju/code/polymender.htm&#34; target=&#34;_blank&#34;&gt;Polymender&lt;/a&gt;, or &lt;a href=&#34;http://www.cs.wustl.edu/~taoju/code/PolyMender_1_7_1_exe.rar&#34; target=&#34;_blank&#34;&gt;download the program&lt;/a&gt; and see the readme.txt).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Voxelcore&lt;/strong&gt; program itself can produce a SOG file from a MRC file in mode &lt;code&gt;mrc2sog&lt;/code&gt;:
-&lt;code&gt;voxelcore -md=mrc2sog -mrc=mrc_file_path -sog=sog_output_path&lt;/code&gt;
-The original mrc can be deleted if the user has no other intention with it, since the sog file contains complete information about the volume.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;producing-medial-axis&#34;&gt;Producing medial axis&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Now the input is ready, our program can be called in the following format&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;voxelcore -md=validmode&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The program runs in a few modes to help generate the medial axis of the input shape, and other relevant information.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Generating medial axis from volume with&lt;/strong&gt; &lt;code&gt;-md=vol2ma&lt;/code&gt;. In this mode, the program will read in the specified volume file, and output the voxel core to approximate true medial axis. Complete information about this mode is listed below (can be printed by typing &lt;code&gt;voxelcore -md=vol2ma&lt;/code&gt;).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;voxelcore -md=vol2ma &amp;lt;in: volume fullpath. ext: .mrc/.sog&amp;gt; &amp;lt;out: MA fullpath. ext: .ply&amp;gt; [optional args]
-optional:
-    -tt (1 or more comma-sep lambda pruning thresholds. OPTIONAL.) type: string default: &amp;quot;0.04&amp;quot;
-    -fullOrPruned (write full or prunned voxel core (0: pruned, 1: full, 2: both). OPTIONAL.) type: int32 default: 0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Generating voxel shape boundary with&lt;/strong&gt; &lt;code&gt;-md=vol2mesh&lt;/code&gt;. In this mode, the boundary of the voxel shape represented by a volume file is extracted as a .off mesh file. Special argument can be specified to only output a point cloud (without faces). Full information about this mode is as follows (can be printed by typing &lt;code&gt;voxelcore -md=vol2mesh&lt;/code&gt;).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;voxelcore -md=vol2mesh &amp;lt;input vol fullpath&amp;gt; &amp;lt;output mesh fullpath(w/o extension)&amp;gt; [optional args]
-optional:
-    -onlyBndryVts (only extract the vertices of the voxel boundary. OPTIONAL.) type: bool default: true
-    -write2node (write voxel boundary vts to .node file in input file folder. OPTIONAL.) type: bool default: false
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Converting &lt;code&gt;.mrc&lt;/code&gt; to &lt;code&gt;.sog&lt;/code&gt; with&lt;/strong&gt; &lt;code&gt;-md=mrc2sog&lt;/code&gt;. A .mrc volume file can be converted to a .sog volume file in this mode (as depicted in the pipeline figure by a dotted arrow). Again typing &lt;code&gt;voxelcore -md=mrc2sog&lt;/code&gt; prompts the full information abou this mode.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;voxelcore -md=vol2mesh &amp;lt;input vol fullpath&amp;gt; &amp;lt;output mesh fullpath(w/o extension)&amp;gt; [optional]
-optional:
-    -onlyBndryVts (only extract the vertices of the voxel boundary. OPTIONAL.) type: bool default: true
-    -write2node (write voxel boundary vts to .node file in input file folder. OPTIONAL.) type: bool default: false
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Robust medial axis computation and regularization</title>
-      <link>/project/ma/</link>
-      <pubDate>Mon, 07 May 2018 18:02:02 -0500</pubDate>
-      
-      <guid>/project/ma/</guid>
-      <description>&lt;p&gt;This project presents a robust medial axis generation pipeline. It consists of two works:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Voxel Core: Efficient, robust, and provably good approximation of 3D medial axes. &lt;a href=&#34;/project/voxelcore-readme/&#34; target=&#34;_blank&#34;&gt;See readme&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Erosion thickness on medial axes of 3D shapes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(details coming soon&amp;hellip;)&lt;/p&gt;
-</description>
+      <title></title>
+      <link>https://yajieyan.github.io/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yajieyan.github.io/admin/config.yml</guid>
+      <description></description>
     </item>
     
   </channel>

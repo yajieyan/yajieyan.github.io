@@ -1,0 +1,1097 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Pipeline Figure 1. Pipeline of generating medial axis using voxelcore program. Users first prepare their datasets into dense volumes or sparse volumes, and then run voxelcore to produce medial axes. Optionally the medial axes can be further simplified using another tightly related tool called Erosion Thickness." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://yajieyan.github.io/publication/voxelcore/readme/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.832f4349361bf479dece6e8aacc6bfa5.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://yajieyan.github.io/publication/voxelcore/readme/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Yajie Yan&#39;s Homepage" />
+  <meta property="og:url" content="https://yajieyan.github.io/publication/voxelcore/readme/" />
+  <meta property="og:title" content="Voxelcore Readme | Yajie Yan&#39;s Homepage" />
+  <meta property="og:description" content="Pipeline Figure 1. Pipeline of generating medial axis using voxelcore program. Users first prepare their datasets into dense volumes or sparse volumes, and then run voxelcore to produce medial axes. Optionally the medial axes can be further simplified using another tightly related tool called Erosion Thickness." /><meta property="og:image" content="https://yajieyan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://yajieyan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2018-05-08T19:10:35-05:00"
+      />
+    
+    <meta property="article:modified_time" content="2018-05-08T19:10:35-05:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://yajieyan.github.io/publication/voxelcore/readme/"
+  },
+  "headline": "Voxelcore Readme",
+  
+  "datePublished": "2018-05-08T19:10:35-05:00",
+  "dateModified": "2018-05-08T19:10:35-05:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yajie Yan's Homepage",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://yajieyan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Pipeline Figure 1. Pipeline of generating medial axis using voxelcore program. Users first prepare their datasets into dense volumes or sparse volumes, and then run voxelcore to produce medial axes. Optionally the medial axes can be further simplified using another tightly related tool called Erosion Thickness."
+}
+</script>
+
+  
+
+  
+
+  
+
+
+  <title>Voxelcore Readme | Yajie Yan&#39;s Homepage</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c22856bd8ee9965da17b4cbee49176bf" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Yajie Yan&#39;s Homepage</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Yajie Yan&#39;s Homepage</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Voxelcore Readme</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    
+
+    
+
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"><h2 id="pipeline">Pipeline</h2>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-figure-1-pipeline-of-generating-medial-axis-using-voxelcore-program-users-first-prepare-their-datasets-into-dense-volumes-or-sparse-volumes-and-then-run-voxelcore-to-produce-medial-axes-optionally-the-medial-axes-can-be-further-simplified-using-another-tightly-related-tool-called-erosion-thickness-please-see-its-project-page-for-details">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/vc-pipeline.png" alt="fig-pipeline" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Figure 1. Pipeline of generating medial axis using voxelcore program. Users first prepare their datasets into dense volumes or sparse volumes, and then run voxelcore to produce medial axes. Optionally the medial axes can be further simplified using another tightly related tool called Erosion Thickness. Please see its project page for details.
+    </figcaption></figure>
+<p>Usually the user is in pocession of a digital shape that&rsquo;s either represented as a volume by a set of images, or as a surface by a triangular mesh. Below we explain how to convert these datasets into a dense volume (<code>.mrc</code>) or a sparse signed octree (<code>.sog</code>) respectively, both are acceptable input formats to our program</p>
+<h2 id="preparing-input">Preparing input</h2>
+<hr>
+<p>As shown in Figure 1, input to our program shall be prepared differently depending on the type of original dataset.</p>
+<h3 id="from-image-stack-to-mrc">From image stack to <code>.mrc</code></h3>
+<p>If the user has a stack of images (e.g. png, tiff), there exists three approaches to convert that into a volume in format <code>.mrc</code>, which can be input to our voxelcore program. A <code>.mrc</code> file stores a 3D volume where each voxel has a density value. Voxelcore assumes that object voxels have values &gt; 0, while background voxels &lt;= 0.</p>
+<ul>
+<li><strong>Interactive programs</strong> Free-wares such as Paraview and Chimera can open stack of images in common formats (e.g. tiff, png, jpg), visualizing a volume dataset within the program. This voluem can be then saved as a <code>.mrc</code> file. This approach is very easy to perform, but may not be suited for purpose of batch processing.</li>
+<li><strong>Command line utilities</strong> One can easily find a handful command line tools online that process images into volume file. However to our knowledge, these utilities only accept certain image formats. For example the <a href="http://bio3d.colorado.edu/imod/doc/program_listing.html#TOP" target="_blank" rel="noopener">IMOD package</a> offers a command line program called <code>tif2mrc</code> that converts a stack of tiff images to a mrc file. The user would need to convert their images to tiff first to use this utility. This approach is easy to batch process any number of datasets, but no one utility can cover a wide range of formats.</li>
+<li><strong>Scripts</strong> The 3rd option is to take a bit self initiative to write some scripts to do the job. Though myriad scripting languages are out there, we had the best experience with python, as the vastly available modules help pull the work off more easily. For example, <a href="https://pydicom.github.io/" target="_blank" rel="noopener">pydicom</a> can easily parse DICOM files, a powerful yet sophisticated medical image format. Then the content can be written to a <code>.mrc</code> file using another python library, <a href="https://github.com/ccpem/mrcfile" target="_blank" rel="noopener">mrcfile</a>. Similar library exists that parse other widly used image formats. These specialized python scripts can be further wrapped by a format dispatcher that can better automate the task. The advantage is apparently an automatic conversion tool suitable for batch processing a variety of formats the user wants to support.</li>
+</ul>
+<h3 id="from-mesh-to-sog">From mesh to <code>.sog</code></h3>
+<p>On the other hand, users with a mesh representing the shape are suggested to convert it to a sparse signed octree in format <code>.sog</code>.</p>
+<ul>
+<li><strong>Polymender</strong> can be used to produce a SOG file from the given triangular mesh (route 2 in Figure 1) (see <a href="http://www.cs.wustl.edu/~taoju/code/polymender.htm" target="_blank" rel="noopener">Polymender</a>, or <a href="http://www.cs.wustl.edu/~taoju/code/PolyMender_1_7_1_exe.rar" target="_blank" rel="noopener">download the program</a> and see the readme.txt).</li>
+<li><strong>Voxelcore</strong> program itself can produce a SOG file from a MRC file in mode <code>mrc2sog</code>:
+<code>voxelcore -md=mrc2sog -mrc=mrc_file_path -sog=sog_output_path</code>
+The original mrc can be deleted if the user has no other intention with it, since the sog file contains complete information about the volume.</li>
+</ul>
+<h2 id="producing-medial-axis">Producing medial axis</h2>
+<hr>
+<p>Now the input is ready, our program can be called in the following format</p>
+<p><code>voxelcore -md=validmode</code></p>
+<p>The program runs in a few modes to help generate the medial axis of the input shape, and other relevant information.</p>
+<p><strong>Generating medial axis from volume with</strong> <code>-md=vol2ma</code>. In this mode, the program will read in the specified volume file, and output the voxel core to approximate true medial axis. Complete information about this mode is listed below (can be printed by typing <code>voxelcore -md=vol2ma</code>).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">voxelcore -md=vol2ma &lt;in: volume fullpath. ext: .mrc/.sog&gt; &lt;out: MA fullpath. ext: .ply&gt; [optional args]
+</span></span><span class="line"><span class="cl">optional:
+</span></span><span class="line"><span class="cl">    -tt (1 or more comma-sep lambda pruning thresholds. OPTIONAL.) type: string default: &#34;0.04&#34;
+</span></span><span class="line"><span class="cl">    -fullOrPruned (write full or prunned voxel core (0: pruned, 1: full, 2: both). OPTIONAL.) type: int32 default: 0
+</span></span></code></pre></div><p><strong>Generating voxel shape boundary with</strong> <code>-md=vol2mesh</code>. In this mode, the boundary of the voxel shape represented by a volume file is extracted as a .off mesh file. Special argument can be specified to only output a point cloud (without faces). Full information about this mode is as follows (can be printed by typing <code>voxelcore -md=vol2mesh</code>).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">voxelcore -md=vol2mesh &lt;input vol fullpath&gt; &lt;output mesh fullpath(w/o extension)&gt; [optional args]
+</span></span><span class="line"><span class="cl">optional:
+</span></span><span class="line"><span class="cl">    -onlyBndryVts (only extract the vertices of the voxel boundary. OPTIONAL.) type: bool default: true
+</span></span><span class="line"><span class="cl">    -write2node (write voxel boundary vts to .node file in input file folder. OPTIONAL.) type: bool default: false
+</span></span></code></pre></div><p><strong>Converting <code>.mrc</code> to <code>.sog</code> with</strong> <code>-md=mrc2sog</code>. A .mrc volume file can be converted to a .sog volume file in this mode (as depicted in the pipeline figure by a dotted arrow). Again typing <code>voxelcore -md=mrc2sog</code> prompts the full information abou this mode.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">voxelcore -md=vol2mesh &lt;input vol fullpath&gt; &lt;output mesh fullpath(w/o extension)&gt; [optional]
+</span></span><span class="line"><span class="cl">optional:
+</span></span><span class="line"><span class="cl">    -onlyBndryVts (only extract the vertices of the voxel boundary. OPTIONAL.) type: bool default: true
+</span></span><span class="line"><span class="cl">    -write2node (write voxel boundary vts to .node file in input file folder. OPTIONAL.) type: bool default: false
+</span></span></code></pre></div></div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://yajieyan.github.io/publication/voxelcore/readme/&amp;text=Voxelcore%20Readme" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://yajieyan.github.io/publication/voxelcore/readme/&amp;t=Voxelcore%20Readme" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Voxelcore%20Readme&amp;body=https://yajieyan.github.io/publication/voxelcore/readme/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://yajieyan.github.io/publication/voxelcore/readme/&amp;title=Voxelcore%20Readme" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Voxelcore%20Readme%20https://yajieyan.github.io/publication/voxelcore/readme/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://yajieyan.github.io/publication/voxelcore/readme/&amp;title=Voxelcore%20Readme" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.e66e385e2f1df861699d60acd7a9c670.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.d14f720598b8ad98ae8105a0a502bab6.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
