@@ -73,7 +73,7 @@
   
     
   
-  <meta name="description" content="Workflow ET GUI program contains three tabs: file, visualization, and skeletonization. A general work flow starts from importing input files, computes ET, MC, and skeletons under skeletonization, and interactive visualization through controls in both visualization and skeleton tabs." />
+  <meta name="description" content="GUI Workflow ET GUI program contains three tabs: file, visualization, and skeletonization. A general work flow starts from importing input files, computes ET, MC, and skeletons under skeletonization, and interactive visualization through controls in both visualization and skeleton tabs." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://yajieyan.github.io/publication/et/readme/" />
@@ -234,7 +234,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.832f4349361bf479dece6e8aacc6bfa5.css" />
+  <link rel="stylesheet" href="/css/wowchemy.19096cc24017d395f5aeaa0a8cc7b635.css" />
 
   
   
@@ -306,7 +306,7 @@
   <meta property="og:site_name" content="Yajie Yan&#39;s Homepage" />
   <meta property="og:url" content="https://yajieyan.github.io/publication/et/readme/" />
   <meta property="og:title" content="Erosion Thickness Readme | Yajie Yan&#39;s Homepage" />
-  <meta property="og:description" content="Workflow ET GUI program contains three tabs: file, visualization, and skeletonization. A general work flow starts from importing input files, computes ET, MC, and skeletons under skeletonization, and interactive visualization through controls in both visualization and skeleton tabs." /><meta property="og:image" content="https://yajieyan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:description" content="GUI Workflow ET GUI program contains three tabs: file, visualization, and skeletonization. A general work flow starts from importing input files, computes ET, MC, and skeletons under skeletonization, and interactive visualization through controls in both visualization and skeleton tabs." /><meta property="og:image" content="https://yajieyan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://yajieyan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -352,7 +352,7 @@
       "url": "https://yajieyan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Workflow ET GUI program contains three tabs: file, visualization, and skeletonization. A general work flow starts from importing input files, computes ET, MC, and skeletons under skeletonization, and interactive visualization through controls in both visualization and skeleton tabs."
+  "description": "GUI Workflow ET GUI program contains three tabs: file, visualization, and skeletonization. A general work flow starts from importing input files, computes ET, MC, and skeletons under skeletonization, and interactive visualization through controls in both visualization and skeleton tabs."
 }
 </script>
 
@@ -684,7 +684,7 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><h2 id="workflow">Workflow</h2>
+    <div class="article-style"><h2 id="gui-workflow">GUI Workflow</h2>
 <hr>
 <p>ET GUI program contains three tabs: <code>file</code>, <code>visualization</code>, and <code>skeletonization</code>. A general work flow starts from importing input files, computes ET, MC, and skeletons under <code>skeletonization</code>, and interactive visualization through controls in both visualization and skeleton tabs.</p>
 <ol start="0">
@@ -767,6 +767,47 @@
     </figcaption></figure></p>
 </li>
 </ol>
+<h2 id="command-line-arguments">Command-line Arguments</h2>
+<hr>
+<p>Command line mode is enabled by setting <code>--nogui</code> when calling the exe from terminal. Arguments can be printed by feeding <code>--help</code> to the exe, or more details can be found in the <code>main.cpp</code> file.</p>
+<ul>
+<li>
+<p><code>--nogui</code>, default: <code>false</code>, &ldquo;use cmd line instead? OPTIONAL.&rdquo;</p>
+</li>
+<li>
+<p><code>--shape_file</code>, default: <code>&quot;&quot;</code>, &ldquo;the file for the 3d shape boundary. OPTIONAL.&rdquo;</p>
+</li>
+<li>
+<p><code>--ma_file</code>, default: <code>&quot;&quot;</code>, &ldquo;the file for the medial axis. REQUIRED.&rdquo;</p>
+</li>
+<li>
+<p><code>--r_file</code>, default: <code>&quot;&quot;</code>, &ldquo;the file for the radius function over medial axis. OPTIONAL.&rdquo;</p>
+</li>
+<li>
+<p><code>export_skel</code>, default: <code>false</code>, &ldquo;compute all the way to curve skeleton generation &amp; output skel files.&rdquo;</p>
+</li>
+<li>
+<p><code>runall</code>, default: <code>false</code>, &ldquo;compute all the way to skeleton generation.&rdquo;</p>
+</li>
+<li>
+<p><code>--omega</code>, default: <code>0.01</code>, &ldquo;the sampling rate for steiner subdivision. OPTIONAL.&rdquo;</p>
+</li>
+<li>
+<p><code>--burn_sch</code>, default: <code>1</code>, &ldquo;the burning scheme (0: orig-and-steiner, 1: steiner-only(default value)). OPTIONAL.&rdquo;</p>
+</li>
+<li>
+<p><code>mc_msure</code>, default: <code>&quot;null&quot;</code>, &ldquo;output specified measure on medial curves. nothing to output by default. valid value: {shape-diam, shape-width, &hellip;}. OPTIONAL.&rdquo;</p>
+</li>
+<li>
+<p><code>theta_2</code>, default: <code>1.1</code>, &ldquo;skeleton threshold for face pruning. Assume unit bounding box. All faces purged when &gt; 1. OPTIONAL.&rdquo;</p>
+</li>
+<li>
+<p><code>theta_1</code>, default: <code>0.05</code>, &ldquo;skeleton threshold for curve pruning. Assume unit bounding box. All curves purged when &gt; 1. OPTIONAL.&rdquo;</p>
+</li>
+<li>
+<p><code>smooth_i</code>, default: <code>0</code>, &ldquo;# smooth iterations for skel curves. OPTIONAL.&rdquo;</p>
+</li>
+</ul>
 </div>
 
     
@@ -980,7 +1021,7 @@
   
 
 
-<script src="/js/vendor-bundle.min.e66e385e2f1df861699d60acd7a9c670.js"></script>
+<script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
 
 
 
@@ -1063,7 +1104,7 @@
   
 
 
-<script src="/en/js/wowchemy.min.d14f720598b8ad98ae8105a0a502bab6.js"></script>
+<script src="/en/js/wowchemy.min.facbc6b9f26be25721c463b7030d1299.js"></script>
 
 
 

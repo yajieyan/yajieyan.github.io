@@ -280,8 +280,9 @@ $$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;generating-skeletons&#34;&gt;Generating skeletons&lt;/h2&gt;
 &lt;p&gt;The output of this project, i.e. Voxel cores can be futher simplified using &lt;a href=&#34;https://yajieyan.github.io/publication/et/overview/&#34;&gt;Erosion Thickness&lt;/a&gt;. The output will be a skeleton featuring both curves and surfaces that capture tubular and planar regions of the shape.&lt;/p&gt;
-&lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
+&lt;h2 id=&#34;code--downloads&#34;&gt;Code &amp;amp; Downloads&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/danielyan86129/voxel_ma&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;Git repo&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Paper: &lt;a href=&#34;https://yajieyan.github.io/vc_sig18/voxelma.pdf&#34;&gt; &lt;code&gt;pdf (author version)&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Supplementary: &lt;a href=&#34;https://yajieyan.github.io/vc_sig18/voxelma_sup.pdf&#34;&gt; &lt;code&gt;pdf&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://yajieyan.github.io/ma_data/bunny_from_voxelcore.zip&#34;&gt; &lt;code&gt;Data&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
@@ -343,8 +344,9 @@ $$&lt;/p&gt;
   &lt;/div&gt;&lt;figcaption&gt;
       Figure 2. Gallery of 12 shapes organized by columns. The surface, ET, curve-only skeleton and hybrid skeleton are shown for each shape by rows. See the supplementary material for complete results.
     &lt;/figcaption&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;downloads&#34;&gt;Downloads&lt;/h3&gt;
+&lt;h3 id=&#34;code--downloads&#34;&gt;Code &amp;amp; Downloads&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;Code: &lt;a href=&#34;https://github.com/danielyan86129/ET&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;Git repo&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Paper: &lt;a href=&#34;#&#34;&gt;&lt;code&gt;author version&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Supplementary:
 &lt;ul&gt;
